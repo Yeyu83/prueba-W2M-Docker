@@ -54,6 +54,11 @@
       "nombre": "VISION",
       "descripcion": "Visión es un superhéroe ficticio que aparece en los cómics estadounidenses publicados por Marvel Comics. El personaje apareció por primera vez en Avengers Volumen 1 # 57 (publicado en agosto de 1968, con una fecha de portada de octubre de 1968), y se basa libremente en el personaje de Timely Comics del mismo nombre que era un extraterrestre de otra dimensión. La Visión es un androide (a veces denominado \"sintezoide\") construido por el villano robot Ultron. Originalmente estaba destinado a actuar como el \"hijo\" de Ultron y se le asignó la tarea de destruir al equipo de superhéroes Los Vengadores.",
       "id": 12
+    },
+    {
+      "nombre": "DR. STRANGE",
+      "descripcion": "Doctor Stephen Strange is a fictional character appearing in American comic books published by Marvel Comics. Created by Steve Ditko.",
+      "id": 13
     }
   ]
 }

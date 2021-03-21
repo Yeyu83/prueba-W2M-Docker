@@ -6,7 +6,7 @@ services:
     ports:
       - "3000:3000"
     volumes:
-      - ./db/:/data
+      - ./backend/:/data
     restart: always
   superheroes:
     build:
