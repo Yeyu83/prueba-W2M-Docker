@@ -4,7 +4,7 @@
         <hr>
         <form class="form-group" [formGroup]="form">
             <div>
-                <label>Nombre</label><input class="form-control" #input toUpperCase [inputValue]="input.value" formControlName="nombre" type="text">
+                <label>Nombre</label><input class="form-control" #input toUpperCase [inputValue]="input.value" (sendToUpperCaseValue)="setInputValue($event)"  formControlName="nombre" type="text">
             </div>
             <div>
                 <label>Descripción</label><textarea rows="10" class="form-control" formControlName="descripcion"></textarea>

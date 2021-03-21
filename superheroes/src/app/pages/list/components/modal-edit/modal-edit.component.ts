@@ -33,6 +33,12 @@ export class ModalEditComponent implements OnInit {
     });
   }
 
+  setInputValue(value: string) {
+    if (value) {
+      this.form.get('nombre').setValue(value);
+    }
+  }
+
   save() {
     if (this.form.invalid) {
       this._alertService.showError('Error en el formulario', 'Faltan campos por completar');
