@@ -1,16 +1,17 @@
 version: '3'
 services:
   json-server:
-    build:
-      context: ./mockserver
-      dockerfile: Dockerfile
+    image: vimagick/json-server
+    command: -H 0.0.0.0 -p 3000 -w db.json
     ports:
       - "3000:3000"
-    container_name: mockserver
+    volumes:
+      - ./db/:/data
+    restart: always
   superheroes:
     build:
       context: ./superheroes
       dockerfile: Dockerfile
     ports:
-      - "4200:4200"
+      - "80:80"
     container_name: superheroes
