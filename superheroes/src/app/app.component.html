@@ -1,0 +1,17 @@
+<header class="pt-4 pb-4">
+  <div class="d-flex justify-content-center">
+    <h1 class="m-0 p-2 app-title">SUPERHEROES APP</h1>
+  </div>
+  <ul class="d-flex justify-content-around header-list mb-0 pt-4">
+    <li>
+      <a [routerLink]="['/list']"><fa-icon class="mr-2" [icon]="faList"></fa-icon>Lista de superhéroes</a>
+    </li>
+    <li>
+      <a [routerLink]="['/add']"><fa-icon class="mr-2" [icon]="faUserPlus"></fa-icon>Añadir superhéroe</a>
+    </li>
+  </ul>
+</header>
+<div class="app-body">
+  <router-outlet></router-outlet>
+</div>
+<loader></loader>

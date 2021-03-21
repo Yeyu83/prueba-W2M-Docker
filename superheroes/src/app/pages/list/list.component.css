@@ -1,0 +1,16 @@
+.list-item {
+    cursor: pointer;
+}
+
+.highlight{
+    background: linear-gradient(to top, #cff, #eff);
+}
+
+.item-title {
+    font-family: monospace;
+    font-size: 1rem;
+}
+
+table {
+    width: 100%;
+}

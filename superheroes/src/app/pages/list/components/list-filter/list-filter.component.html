@@ -1,0 +1,7 @@
+<div class="d-flex align-items-end">
+    <form class="from-group mr-2" [formGroup]="form">
+        <label class="mr-2" for="text">Filtro de búsqueda: </label>
+        <input style="width: 360px;" class="form-control input-filter" type="text" placeholder="Introduce un superhéroe..." formControlName="text">
+    </form>
+    <button class="btn btn-primary" (click)="search()"><fa-icon class="mr-2" [icon]="faSearch"></fa-icon>Buscar</button>
+</div>

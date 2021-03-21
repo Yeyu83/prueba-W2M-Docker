@@ -1,0 +1,23 @@
+header {
+    background-image: linear-gradient(#eff, white);
+    background-repeat: no-repeat;
+    background-color: white;
+    border-bottom: 1px solid rgb(167, 168, 168);
+}
+
+a {
+    font-size: 1.2rem;
+}
+
+.app-title {
+    font-size: 3rem;
+    font-family: monospace;
+}
+
+.app-body {
+    padding: 4em 16em;
+}
+
+.header-list {
+    list-style-type: none;
+}
