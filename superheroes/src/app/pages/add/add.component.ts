@@ -40,6 +40,10 @@ export class AddComponent implements OnInit {
     });
   }
 
+  setInputValue(value: string) {
+    this.form.get('nombre').setValue(value);
+  }
+
   add() {
     if (this.form.invalid) {
       this._alertService.showError('Error en el formulario', 'Faltan campos por completar');

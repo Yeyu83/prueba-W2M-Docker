@@ -5,7 +5,7 @@
             <form class="form-group" [formGroup]="form">
                 <div>
                     <label>Nombre</label>
-                    <input class="form-control" #input toUpperCase [inputValue]="input.value" formControlName="nombre" type="text" maxlength="50">
+                    <input class="form-control" #input toUpperCase [inputValue]="input.value" (sendToUpperCaseValue)="setInputValue($event)" formControlName="nombre" type="text" maxlength="50">
                 </div>
                 <div>
                     <label>Descripción</label>

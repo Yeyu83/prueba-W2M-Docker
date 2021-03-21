@@ -59,6 +59,11 @@
       "nombre": "DR. STRANGE",
       "descripcion": "Doctor Stephen Strange is a fictional character appearing in American comic books published by Marvel Comics. Created by Steve Ditko.",
       "id": 13
+    },
+    {
+      "nombre": "FLASH",
+      "descripcion": "The Flash (or simply Flash) is the name of several superheroes appearing in American comic books published by DC Comics. Created by writer Gardner Fox and artist Harry Lampert, the original Flash first appeared in Flash Comics #1 (cover date January 1940/release month November 1939).",
+      "id": 14
     }
   ]
 }

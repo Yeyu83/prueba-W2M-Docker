@@ -1,4 +1,4 @@
-import { AfterViewChecked, Directive, ElementRef, Input, Renderer2 } from '@angular/core';
+import { AfterContentChecked, AfterViewChecked, Directive, ElementRef, EventEmitter, Input, Output, Renderer2 } from '@angular/core';
  
 @Directive({
   selector: '[toUpperCase]'
@@ -6,17 +6,13 @@ import { AfterViewChecked, Directive, ElementRef, Input, Renderer2 } from '@angu
 export class ToUpperCaseDirective {
 
     @Input() set inputValue(value: string) {
-        this.setUpperCase(value);
+        this.sendtoUpperCaseValue(value);
     }
 
-    constructor(
-        private el: ElementRef,
-        private renderer: Renderer2
-    ) { }
+    @Output() sendToUpperCaseValue = new EventEmitter<string>();
 
-    setUpperCase(inputValue: string) {
-        // this.renderer.setProperty(this.el.nativeElement, 'value', inputValue.toUpperCase());
-        this.el.nativeElement.value = inputValue.toUpperCase();
+    sendtoUpperCaseValue(inputValue: string) {
+        this.sendToUpperCaseValue.next(inputValue.toUpperCase());
     }
  
 }
